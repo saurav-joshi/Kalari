@@ -1,3 +1,67 @@
 .header {
   text-align: center;
 }
+#image-star {
+  position: relative;
+}
+svg {
+  width: auto;
+}
+.corner {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(153, 181, 232);
+  border-radius: 50%;
+  
+}
+.corner-1 {
+  top: 138px;
+  left: -10px;
+ 
+}
+.corner-2 {
+  top: -10px;
+  left: 188px;
+ 
+}
+.corner-3 {
+  top: 138px;
+  left: 376px;
+ 
+}
+.corner-4 {
+  top: 360px;
+  left: 70px;
+ 
+}
+.corner-5 {
+  top: 360px;
+  left: 305px;
+ 
+}
+.corner-tag {
+  width: 10px;
+}
+@keyframes up-right {
+  0% {
+      transform: scale(0.4);
+      opacity: .4
+  }
+  25% {
+    transform: scale(0.8);
+      opacity: .85
+  }
+  50% {
+      transform: scale (1, 5);
+      opacity: 1;
+  }
+  75% {
+    transform: scale (1.25);
+    opacity: 1;
+}
+  100% {
+      transform: scale(1);
+      opacity: .85;
+  }
+}
