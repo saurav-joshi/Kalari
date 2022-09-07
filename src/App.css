@@ -1,3 +1,67 @@
 .header {
   text-align: center;
 }
+#image-star {
+  position: relative;
+}
+svg {
+  width: auto;
+}
+.corner {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  
+}
+.corner-1 {
+  top: 180px;
+  left: 290px;
+ 
+}
+.corner-2 {
+  top: 221px;
+  left: 262px;
+ 
+}
+.corner-3 {
+  top: 268px;
+  left: 272px;
+ 
+}
+.corner-4 {
+  top: 202px;
+  left: 318px;
+ 
+}
+.corner-5 {
+  top: 254px;
+  left: 308px;
+ 
+}
+.corner-tag {
+  width: 10px;
+}
+@keyframes up-right {
+  0% {
+      transform: scale(0.4);
+      opacity: .4
+  }
+  25% {
+    transform: scale(0.8);
+      opacity: .85
+  }
+  50% {
+      transform: scale (1, 5);
+      opacity: 1;
+  }
+  75% {
+    transform: scale (1.25);
+    opacity: 1;
+}
+  100% {
+      transform: scale(1);
+      opacity: .85;
+  }
+}
