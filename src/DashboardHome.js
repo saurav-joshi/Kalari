@@ -108,7 +108,7 @@ const DashboardHome = () => {
       <div className="panels-dbcontainer">
         <div className="panel left-panel">
           <div id="image-star">
-            <img width="400" src="images/blue-star.png" alt="Our Locations" />
+            <img width="600" src="images/graph.png" alt="Our Locations" />
             <div className="corner corner-1">
               <a data-tip data-for="corner1" className="corner-tag">
                 {""}
