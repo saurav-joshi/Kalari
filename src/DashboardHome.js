@@ -114,16 +114,16 @@ const DashboardHome = () => {
                 {""}
                 <div style={{ widht: "25px", height: "25px" }}></div>
               </a>
-              <ReactTooltip id="corner1" type="light">
-                <span>Show happy face</span>
+              <ReactTooltip id="corner1" type="dark">
+                <span>Extraction & Consolidation</span>
               </ReactTooltip>
             </div>
             <div className=" corner corner-2">
               <a data-tip data-for="corner2" className="corner-tag">
                 <div style={{ widht: "25px", height: "25px" }}></div>
               </a>
-              <ReactTooltip id="corner2" type="light">
-                <span>Show happy face</span>
+              <ReactTooltip id="corner2" type="dark">
+                <span>Ingestion</span>
               </ReactTooltip>
             </div>
 
@@ -131,8 +131,8 @@ const DashboardHome = () => {
               <a data-tip data-for="corner-3" className="corner-tag">
                 <div style={{ widht: "25px", height: "25px" }}></div>
               </a>
-              <ReactTooltip id="corner-3" type="light">
-                <span>Show happy facedsa</span>
+              <ReactTooltip id="corner-3" type="dark">
+                <span>Transformation</span>
               </ReactTooltip>
             </div>
 
@@ -140,8 +140,8 @@ const DashboardHome = () => {
               <a data-tip data-for="corner-4" className="corner-tag">
                 <div style={{ widht: "25px", height: "25px" }}></div>
               </a>
-              <ReactTooltip id="corner-4" type="light">
-                <span>Show happy facdase</span>
+              <ReactTooltip id="corner-4" type="dark">
+                <span>Enrichment/Augmentation</span>
               </ReactTooltip>
             </div>
 
@@ -149,8 +149,8 @@ const DashboardHome = () => {
               <a data-tip data-for="corner-5" className="corner-tag">
                 <div style={{ widht: "25px", height: "25px" }}></div>
               </a>
-              <ReactTooltip id="corner-5" type="light">
-                <span>Show happy fdace</span>
+              <ReactTooltip id="corner-5" type="dark">
+                <span>Querying</span>
               </ReactTooltip>
             </div>
           </div>
