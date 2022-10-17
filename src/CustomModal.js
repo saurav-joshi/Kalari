@@ -70,6 +70,7 @@ const CenteredModal = (props) => {
     const [objStoreUrl, setObjStoreUrl] = useState('')
     const [logsVariant, setLogsVariant] = useState('light')
     const [citibikeVariant, setCitibikeVariant] = useState('light')
+    const [bankingDataVariant, setBankingDataVariant] = useState('light')
     const [twitterVariant, setTwitterVariant] = useState('light')
     const [stataVariant, setStataVariant] = useState('light')
 
@@ -94,6 +95,10 @@ const CenteredModal = (props) => {
     const [objStoreList, setObjStoreList] = useState([]);
     //const sinkObjStoreList = ["sink-citibike", "sink-tweets-data"];
     const [sinkObjStoreList, setSinkObjStoreList] = useState([]);
+
+    const bankingImageStyle = {
+        padding: 10
+      };
 
     const useStylesForComp = makeStyles({
         root: {
@@ -120,6 +125,7 @@ const CenteredModal = (props) => {
             setLogsVariant("info")
             setTwitterVariant("light")
             setCitibikeVariant("light")
+            setBankingDataVariant("light")
             setStataVariant("light")
         }
         else if (e === "twitter") {
@@ -127,6 +133,7 @@ const CenteredModal = (props) => {
             setLogsVariant("light")
             setTwitterVariant("info")
             setCitibikeVariant("light")
+            setBankingDataVariant("light")
             setStataVariant("light")
         }
         else if (e === "citibike") {
@@ -134,6 +141,15 @@ const CenteredModal = (props) => {
             setLogsVariant("light")
             setTwitterVariant("light")
             setCitibikeVariant("info")
+            setBankingDataVariant("light")
+            setStataVariant("light")
+        }
+        else if (e === "bankingdata") {
+            setPageBtnStatus('')
+            setLogsVariant("light")
+            setTwitterVariant("light")
+            setCitibikeVariant("light")
+            setBankingDataVariant("info")
             setStataVariant("light")
         }
         else if (e === "stata") {
@@ -141,6 +157,7 @@ const CenteredModal = (props) => {
             setLogsVariant("light")
             setTwitterVariant("light")
             setCitibikeVariant("light")
+            setBankingDataVariant("light")
             setStataVariant("info")
         }
         else if (e === "solr") {
@@ -148,6 +165,7 @@ const CenteredModal = (props) => {
             setNoSqlType(e)
             setSolrEsVariant("light")
             setESVariant("light")
+            setBankingDataVariant("light")
             setSolrVariant("info")
         }
         else if (e === "es") {
@@ -155,12 +173,14 @@ const CenteredModal = (props) => {
             setNoSqlType(e)
             setSolrEsVariant("light")
             setESVariant("info")
+            setBankingDataVariant("light")
             setSolrVariant("light")
         }
         else if (e === "solr_es") {
             setPageBtnStatus('')
             setNoSqlType(e)
             setSolrEsVariant("info")
+            setBankingDataVariant("light")
             setESVariant("light")
             setSolrVariant("light")
         }
@@ -815,6 +835,15 @@ const CenteredModal = (props) => {
                         <br />
             Citi Bike Trip Data
           </Button>
+
+          {'   '}
+                    <Button size="sm" variant={bankingDataVariant} onClick={() => { handleDataSelect("bankingdata") }}>
+                        <Image style={bankingImageStyle} src="images/banking_data.jpg" width={140} height= {140}  roundedCircle />
+                        <br />
+           Banking Data
+          </Button>
+
+
                     {'   '}</div></> : null}
                 {props.flagNoSql ? <><div class="col-md-12 text-center">
                     <Button size="sm" variant={twitterVariant} onClick={() => { handleDataSelect("solr") }}>
